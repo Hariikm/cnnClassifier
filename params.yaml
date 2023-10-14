@@ -1,8 +1,8 @@
 AUGMENTATION: True
-IMAGE_SIZE: [224,224,3]   # as per our VG 16 Model
+IMAGE_SIZE: [224,224,3]   # as per our VGG 16 Model
 BATCH_SIZE: 16
 INCLUDE_TOP: False
-EPOCHS: 3
+EPOCHS: 1
 CLASSES: 2   # 2 classes ( dogs and cats )
 WEIGHTS: imagenet
 LEARNING_RATE: 0.01
