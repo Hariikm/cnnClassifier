@@ -8,6 +8,7 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any
 import joblib 
+import base64
 
 
 @ensure_annotations
@@ -136,3 +137,25 @@ def load_bins(path: Path) -> Any:
     data= joblib.load(path)
     logging.info(f"binary file loaded from path {path}")
     return data
+
+
+def decodeImage(imgstring, fileName):
+    imgdata= base64.b64decode(imgstring)
+    with open(fileName, 'wb') as f:
+        f.write(imgdata)
+        f.close()
+
+
+def encodeImageIntoBase64(croppedImagePath):
+    with open(croppedImagePath, 'rb') as f:
+        return base64.b64encode(f.read())
+    
+
+    """ 
+        Here its always better to send images via net in a base64 format ( kind of represented in ASCII format )
+        So thats what encodeImageIntoBase64 do, it return our image in base64 format,
+
+        But our model is trained on the normal image right? So we need to converth the base64 into normal image,
+        that is what decode image do
+    
+    """
