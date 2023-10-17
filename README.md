@@ -45,8 +45,7 @@
 
 	
 ### 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/catdog
-
+    - Save the URI: 760589824206.dkr.ecr.eu-north-1.amazonaws.com/catdog
 	
 ### 4. Create EC2 machine (Ubuntu) 
 
