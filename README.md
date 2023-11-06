@@ -10,7 +10,6 @@
 6. Update the components
 7. Update the pipeline
 8. Update the main.py
-<<<<<<< HEAD
  
 
 ## AWS-CICD-Deployment-with-Github-Actions
@@ -84,6 +83,3 @@
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
-=======
- 
->>>>>>> parent of 1971347 (Readme updated with AWS steps)
